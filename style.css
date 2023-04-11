@@ -10,3 +10,36 @@
 .flexbox{
     display: flex;
 }
+
+/* BODY */
+
+body{
+    background-color: black;
+    color: white;
+}
+
+/* HEADER */
+
+header{
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5vh 0;
+    border: 1px dashed white; /**/
+}
+
+header > div{
+    margin-right: 5px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(40, 40, 40);
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 1px dashed white; /**/
+}

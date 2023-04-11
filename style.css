@@ -37,6 +37,7 @@ header{
     justify-content: flex-end;
     padding: 5vh 0;
     font-size: 0.9rem;
+    min-width: 164px;
 }
 
 header > div{
@@ -57,7 +58,43 @@ header img{
 }
 
 header img#little{
-    height: 70%;
+    height: 60%;
+}
+
+/* MAIN */
+
+main{
+
+    height: calc(100vh - 10vh - 6px - 110px);
+    min-height: 500px;/**/
+    padding: 0 50px 30px;
+    gap: 5px;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+main section.card{
+    width: calc((1920px - 30px - 100px - 15px) / 7);
+    height: calc((1001px - 10vh - 36px - 80px - 30px) / 5);
+    margin-bottom: 10px;
+    position: relative;
+    background-image: url(img/lorem-picsum.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+main div{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+}
+
+main img{
+    width: 10%;
 }
 
 /* FOOTER */
@@ -70,6 +107,7 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
+    min-width: 940px;
 }
 
 footer section{
@@ -80,6 +118,10 @@ footer section{
 footer section:not(section:last-child){
     padding: 15px 0;
     gap: 20px;
+}
+
+footer section:first-child{
+    margin-left: 20px;
 }
 
 footer a{
